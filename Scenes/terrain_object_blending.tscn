@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://diwnalcrf45ri"]
+
+[ext_resource type="ArrayMesh" uid="uid://dolx084rct0b3" path="res://Objects/Terrain.obj" id="1_ywahw"]
+[ext_resource type="Material" uid="uid://to4rco8vgq72" path="res://Materials/Terrain_Shader_Material.tres" id="2_kboo5"]
+[ext_resource type="ArrayMesh" uid="uid://dtxnxnlcpp6nr" path="res://Objects/Rock.obj" id="3_6lo7y"]
+[ext_resource type="Material" uid="uid://1yrobtefhsml" path="res://Materials/Rock_Shader_Material.tres" id="4_653lw"]
+
+[node name="Terrain-Object Blending" type="Node3D"]
+
+[node name="Terrain" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ywahw")
+surface_material_override/0 = ExtResource("2_kboo5")
+metadata/ID = 1
+
+[node name="Rock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("3_6lo7y")
+surface_material_override/0 = ExtResource("4_653lw")
+metadata/ID = 2

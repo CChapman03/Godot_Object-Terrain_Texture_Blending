@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" load_steps=7 format=3 uid="uid://1yrobtefhsml"]
+
+[ext_resource type="Shader" path="res://Materials/Base_Blend_Material.gdshader" id="1_5vo05"]
+[ext_resource type="Texture2D" uid="uid://duanu53hk3hqy" path="res://Textures/Rock_basecolor-1K.png" id="2_bidvq"]
+[ext_resource type="Texture2D" uid="uid://wk0cby332tjk" path="res://Textures/Rock_normal-1K.png" id="3_0o70e"]
+[ext_resource type="Texture2D" uid="uid://dkyajqvtbisvo" path="res://Textures/Rock_roughness-1K.png" id="4_3qa17"]
+[ext_resource type="Texture2D" uid="uid://bx2v4teie8kw2" path="res://Textures/Rock_specular-1k.png" id="5_vr8g0"]
+[ext_resource type="Texture2D" uid="uid://7m13yd3i13nq" path="res://Textures/2K-country_road_albedo.jpg" id="6_y1mpp"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_5vo05")
+shader_parameter/texture_albedo = ExtResource("2_bidvq")
+shader_parameter/normal_factor = 0.500001
+shader_parameter/texture_normal = ExtResource("3_0o70e")
+shader_parameter/texture_roughness = ExtResource("4_3qa17")
+shader_parameter/texture_specular = ExtResource("5_vr8g0")
+shader_parameter/uv_scale = Vector3(1, 1, 1)
+shader_parameter/uv_offset = Vector3(0, 0, 0)
+shader_parameter/texture_blend = ExtResource("6_y1mpp")
